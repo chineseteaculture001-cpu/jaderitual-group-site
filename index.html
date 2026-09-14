@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JadeRitual Group | Chinese Manufacturing &amp; Export Partner</title>
+<meta name="description" content="JadeRitual Group is a China-based export partner spanning tea ware, pearl jewellery, construction machinery and parts, electric vehicles and automotive interior accessories. Wholesale and OEM/ODM only.">
+<link rel="canonical" href="https://thejaderitual.com/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JadeRitual Group | Chinese Manufacturing &amp; Export Partner">
+<meta property="og:description" content="Five divisions. One standard: cut, filed, carved, polished.">
+<meta property="og:url" content="https://thejaderitual.com/">
+<meta name="theme-color" content="#2F6B5A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232F6B5A'/%3E%3Cpath d='M16 7l6 9-6 9-6-9z' fill='none' stroke='%23EAF3EF' stroke-width='1.6'/%3E%3C/svg%3E">
+<style>
+/* ============================================================
+   JadeRitual Group — corporate site
+   Design rule (brand system): express jade through LANGUAGE and
+   COLOUR, never through jade ornaments or gemstone imagery.
+   Palette: deep jade green + warm paper + restrained gold accent.
+   ============================================================ */
+:root{
+  --jade-900:#1C4A3E;
+  --jade-700:#2F6B5A;
+  --jade-500:#4E9A82;
+  --jade-300:#9CC7B7;
+  --jade-100:#E4F0EB;
+  --paper:#FBFAF7;
+  --paper-2:#F4F1EA;
+  --ink:#1E2A26;
+  --ink-2:#4A5A55;
+  --ink-3:#7C8A86;
+  --gold:#A98B54;
+  --line:#DEDBD2;
+  --maxw:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;
+  color:var(--ink);background:var(--paper);line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+h1,h2,h3,.serif{font-family:Georgia,"Times New Roman","Songti SC",serif;font-weight:500;line-height:1.25}
+a{color:inherit;text-decoration:none}
+.zh{display:block;font-size:.82em;letter-spacing:.06em;color:var(--ink-3);margin-top:.35em}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;background:rgba(251,250,247,.92);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+.hd{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{display:flex;align-items:center;gap:11px}
+.mark{width:30px;height:30px;flex:none}
+.brand-t{font-family:Georgia,serif;font-size:1.06rem;letter-spacing:.02em}
+.brand-s{font-size:.66rem;letter-spacing:.25em;color:var(--ink-3);text-transform:uppercase}
+nav{display:flex;gap:30px;font-size:.86rem;letter-spacing:.04em;color:var(--ink-2)}
+nav a{transition:color .2s}
+nav a:hover{color:var(--jade-700)}
+@media(max-width:860px){nav{display:none}}
+
+/* ---------- hero ---------- */
+.hero{
+  background:linear-gradient(168deg,var(--jade-100) 0%,var(--paper) 58%);
+  border-bottom:1px solid var(--line);padding:96px 0 84px;
+}
+.hero-grid{display:grid;grid-template-columns:1.35fr .95fr;gap:60px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:38px}.hero{padding:64px 0 56px}}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--jade-700);margin-bottom:22px}
+.hero h1{font-size:clamp(2rem,4.4vw,3.3rem);color:var(--jade-900)}
+.hero h1 em{font-style:normal;display:block;color:var(--jade-700)}
+.hero-zh{font-family:Georgia,"Songti SC",serif;font-size:1.16rem;color:var(--ink-2);letter-spacing:.14em;margin-top:26px}
+.hero p.lead{margin-top:22px;font-size:1.03rem;color:var(--ink-2);max-width:34em}
+.cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:12px 26px;border-radius:2px;font-size:.88rem;
+  letter-spacing:.06em;border:1px solid var(--jade-700);transition:.2s;
+}
+.btn-solid{background:var(--jade-700);color:#fff}
+.btn-solid:hover{background:var(--jade-900);border-color:var(--jade-900)}
+.btn-ghost{color:var(--jade-700)}
+.btn-ghost:hover{background:var(--jade-100)}
+.hero-note{
+  border-left:2px solid var(--jade-300);padding:6px 0 6px 20px;
+  font-size:.9rem;color:var(--ink-2);
+}
+.hero-note strong{color:var(--jade-900);font-weight:600}
+
+/* ---------- sections ---------- */
+section{padding:86px 0}
+.sec-head{max-width:44em;margin-bottom:52px}
+.sec-head h2{font-size:clamp(1.5rem,2.6vw,2.05rem);color:var(--jade-900)}
+.sec-head p{margin-top:16px;color:var(--ink-2);font-size:.98rem}
+.alt{background:var(--paper-2)}
+
+/* ---------- story ---------- */
+.story{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+@media(max-width:900px){.story{grid-template-columns:1fr;gap:34px}}
+.story h2{font-size:clamp(1.5rem,2.6vw,2.05rem);color:var(--jade-900)}
+.story-zh{font-family:Georgia,"Songti SC",serif;font-size:1.5rem;color:var(--jade-700);letter-spacing:.1em;margin-top:18px}
+.story-body p{color:var(--ink-2);margin-bottom:18px}
+.quote{
+  border-left:2px solid var(--jade-300);padding:4px 0 4px 22px;margin:26px 0;
+  font-family:Georgia,"Songti SC",serif;color:var(--jade-900);font-size:1.02rem;line-height:1.8;
+}
+.quote cite{display:block;margin-top:10px;font-size:.8rem;font-style:normal;color:var(--ink-3);letter-spacing:.06em}
+
+/* ---------- divisions ---------- */
+.div-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:980px){.div-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.div-grid{grid-template-columns:1fr}}
+.div-card{
+  display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);
+  border-radius:4px;padding:30px 26px 26px;position:relative;transition:.22s;
+}
+a.div-card:hover{border-color:var(--jade-300);transform:translateY(-2px);box-shadow:0 10px 30px -18px rgba(31,74,62,.35)}
+.div-bar{width:34px;height:3px;border-radius:2px;margin-bottom:22px}
+.div-card h3{font-size:1.16rem;color:var(--jade-900)}
+.div-card .sub{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:8px}
+.div-card p{margin-top:16px;font-size:.9rem;color:var(--ink-2);flex:1}
+.div-card .dom{
+  margin-top:22px;font-size:.78rem;color:var(--jade-700);letter-spacing:.02em;
+  border-top:1px solid var(--line);padding-top:14px;word-break:break-all;
+}
+.badge{
+  position:absolute;top:22px;right:24px;font-size:.66rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);
+  border-radius:2px;padding:3px 8px;
+}
+.div-card.soon{opacity:.72}
+
+/* ---------- quality ---------- */
+.q-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 44px}
+@media(max-width:760px){.q-grid{grid-template-columns:1fr}}
+.q-item{border-top:1px solid var(--line);padding-top:20px}
+.q-item h3{font-size:1rem;color:var(--jade-900);margin-bottom:10px}
+.q-item p{font-size:.9rem;color:var(--ink-2)}
+.q-item .num{font-family:Georgia,serif;font-size:.8rem;color:var(--jade-500);letter-spacing:.14em;display:block;margin-bottom:10px}
+
+/* ---------- process ---------- */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:880px){.proc{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.proc{grid-template-columns:1fr}}
+.step{background:#fff;border:1px solid var(--line);border-radius:4px;padding:26px 22px;position:relative;overflow:hidden}
+.step .glyph{font-family:Georgia,"Songti SC",serif;font-size:2.6rem;color:var(--jade-100);position:absolute;right:14px;top:2px;line-height:1}
+.step h3{font-size:1.02rem;color:var(--jade-900);position:relative}
+.step .py{font-size:.74rem;letter-spacing:.2em;color:var(--jade-500);text-transform:uppercase;margin-top:7px;position:relative}
+.step p{font-size:.87rem;color:var(--ink-2);margin-top:14px;position:relative}
+
+/* ---------- info / contact ---------- */
+.info-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px}
+@media(max-width:880px){.info-grid{grid-template-columns:1fr;gap:36px}}
+.fact{border-top:1px solid var(--line);padding:15px 0;display:grid;grid-template-columns:150px 1fr;gap:16px;font-size:.9rem}
+.fact dt{color:var(--ink-3);letter-spacing:.03em}
+.fact dd{color:var(--ink)}
+.todo{color:var(--gold);font-style:italic}
+.contact-box{background:var(--jade-900);color:#EAF3EF;border-radius:4px;padding:36px 32px}
+.contact-box h3{color:#fff;font-size:1.16rem;margin-bottom:8px}
+.contact-box .zh{color:rgba(234,243,239,.6)}
+.contact-box a{display:block;margin-top:16px;font-size:.92rem;color:#fff;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:5px;width:fit-content;transition:.2s}
+.contact-box a:hover{border-color:#fff}
+footer{background:var(--jade-900);color:rgba(234,243,239,.62);padding:44px 0;font-size:.82rem}
+.ft{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.ft a{color:rgba(234,243,239,.8)}
+.ft a:hover{color:#fff}
+.disc{margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:.76rem;line-height:1.7;max-width:70em}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="/">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#2F6B5A"/>
+        <path d="M16 7l6 9-6 9-6-9z" fill="none" stroke="#EAF3EF" stroke-width="1.6"/>
+      </svg>
+      <span>
+        <span class="brand-t">JadeRitual Group</span>
+        <span class="brand-s">Group</span>
+      </span>
+    </a>
+    <nav>
+      <a href="#story">The Idea</a>
+      <a href="#divisions">Divisions</a>
+      <a href="#quality">Quality</a>
+      <a href="#process">Process</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Chinese Manufacturing &amp; Export Partner</div>
+      <h1>Cut. Filed.<em>Carved. Polished.</em></h1>
+      <div class="hero-zh">如切如磋，如琢如磨</div>
+      <p class="lead">
+        Jade becomes valuable only after it is worked. We hold every product we export to
+        the same four steps — and we hold ourselves to the same standard in how we deal.
+      </p>
+      <div class="cta">
+        <a class="btn btn-solid" href="#divisions">Our Divisions</a>
+        <a class="btn btn-ghost" href="#contact">Start an Enquiry</a>
+      </div>
+    </div>
+    <div class="hero-note">
+      <strong>Wholesale &amp; OEM / ODM only.</strong><br>
+      Bulk and custom orders. Single-piece retail is not available.
+      <span class="zh">仅承接批发与 OEM / ODM 定制，不做单件零售</span>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="wrap story">
+    <div>
+      <h2>Why jade</h2>
+      <div class="story-zh">玉，石之美者</div>
+    </div>
+    <div class="story-body">
+      <p>
+        In Chinese tradition jade is not valued for rarity alone. It is valued because it is
+        <em>worked</em> — and because its qualities were used for two thousand years as the
+        measure of a person's character. That is the idea this group is built on.
+      </p>
+      <p>
+        It matters to us in two ways. First, <strong>how a thing is made</strong>: nothing leaves
+        our hands unexamined. Second, <strong>how we deal</strong>: no hidden flaws, no inflated
+        claims, no vanishing after the invoice is paid. Those are not marketing lines — they are
+        the two things our name is meant to be judged by.
+      </p>
+      <div class="quote">
+        “The gentleman measures his virtue against jade: warm and lustrous, that is benevolence;
+        fine and close-grained, that is wisdom; flawed yet not concealing the beauty, beautiful
+        yet not concealing the flaw — that is loyalty.”
+        <cite>— The Book of Rites, “Meaning of the Diplomatic Mission” (《礼记·聘义》)</cite>
+      </div>
+      <p>
+        We apply the same idea across five very different businesses — from pearl jewellery to
+        construction machinery. The products have nothing in common. The standard does.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="divisions" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Our divisions</h2>
+      <span class="zh">五大业务板块</span>
+      <p>
+        Each division runs its own dedicated site, catalogue and sales team. Select a division
+        to see products, specifications and enquiry channels.
+      </p>
+    </div>
+
+    <div class="div-grid">
+
+      <a class="div-card" data-live="false" href="https://machinery.thejaderitual.com" data-name="Machinery &amp; Parts">
+        <span class="badge">Launching soon</span>
+        <span class="div-bar" style="background:var(--gold)"></span>
+        <h3>Machinery &amp; Parts</h3>
+        <div class="sub">Excavators · Pumps · Spare parts</div>
+        <p>New construction machinery and the wear parts that keep it running — supplied to dealers, rental fleets and project contractors.</p>
+        <div class="dom">machinery.thejaderitual.com</div>
+      </a>
+
+      <a class="div-card" data-live="false" href="https://ev.thejaderitual.com" data-name="Electric Vehicles">
+        <span class="badge">Launching soon</span>
+        <span class="div-bar" style="background:var(--jade-500)"></span>
+        <h3>Electric Vehicles</h3>
+        <div class="sub">Electric tricycles · Cargo trikes</div>
+        <p>Battery-electric three-wheelers for cargo and passenger use, built for last-mile delivery, agriculture and light urban transport.</p>
+        <div class="dom">ev.thejaderitual.com</div>
+      </a>
+
+      <a class="div-card" data-live="false" href="https://auto.thejaderitual.com" data-name="Automotive Interior">
+        <span class="badge">Launching soon</span>
+        <span class="div-bar" style="background:var(--ink-2)"></span>
+        <h3>Automotive Interior</h3>
+        <div class="sub">Floor mats · Seat covers</div>
+        <p>Custom-fit interior accessories for left- and right-hand-drive markets, produced to vehicle-specific templates.</p>
+        <div class="dom">auto.thejaderitual.com</div>
+      </a>
+
+      <a class="div-card" data-live="true" href="https://tea.thejaderitual.com" data-name="Tea Ware">
+        <span class="div-bar" style="background:var(--jade-700)"></span>
+        <h3>Tea Ware</h3>
+        <div class="sub">Gongfu sets · Zisha · Tea · Trays</div>
+        <p>Gongfu ceremony sets, Yixing zisha teapots, single-origin Chinese tea and hand-finished tea trays.</p>
+        <div class="dom">tea.thejaderitual.com</div>
+      </a>
+
+      <a class="div-card" data-live="true" href="https://jewelry.thejaderitual.com" data-name="Jewellery">
+        <span class="div-bar" style="background:var(--jade-300)"></span>
+        <h3>Jewellery</h3>
+        <div class="sub">Pearl · Shell pearl · Sterling silver</div>
+        <p>Shell pearl and freshwater pearl jewellery — necklaces, sets, earrings and loose beads for jewellers and retailers.</p>
+        <div class="dom">jewelry.thejaderitual.com</div>
+      </a>
+
+      <div class="div-card" style="background:transparent;border-style:dashed;justify-content:center">
+        <h3 style="font-size:1rem">Working with us</h3>
+        <p style="margin-top:12px">We supply wholesale and OEM/ODM only. Tell us the product, the specification and the destination market — we will come back with a quotation.</p>
+        <div class="dom"><a href="#contact" style="color:var(--jade-700)">Start an enquiry →</a></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="quality">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What we commit to on quality</h2>
+      <span class="zh">瑕不掩瑜，瑜不掩瑕，忠也</span>
+      <p>
+        A flaw disclosed is a specification; a flaw concealed is a breach of contract. These are
+        the four commitments we make on every order, in every division.
+      </p>
+    </div>
+    <div class="q-grid">
+      <div class="q-item">
+        <span class="num">01</span>
+        <h3>Nothing is concealed</h3>
+        <p>Where a batch deviates from the agreed specification, we tell you before shipment — with photographs, not adjectives.</p>
+      </div>
+      <div class="q-item">
+        <span class="num">02</span>
+        <h3>What is quoted is what is shipped</h3>
+        <p>Material, grade, dimensions and finish are written into the quotation. Substitutions are proposed for approval, never applied silently.</p>
+      </div>
+      <div class="q-item">
+        <span class="num">03</span>
+        <h3>Independent inspection is welcome</h3>
+        <p>You may appoint a third-party inspection agency at any stage before shipment. We will arrange access and provide the samples they ask for.</p>
+      </div>
+      <div class="q-item">
+        <span class="num">04</span>
+        <h3>Every claim is traceable</h3>
+        <p>Specification sheets, certifications and test reports are issued as documents you can verify — not as badges on a web page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Four steps, named after jade</h2>
+      <span class="zh">《毛传》：治骨曰切，象曰磋，玉曰琢，石曰磨</span>
+      <p>
+        The classical description of working jade names four operations. We use those four words
+        for the four gates every order passes through.
+      </p>
+    </div>
+    <div class="proc">
+      <div class="step">
+        <span class="glyph">切</span>
+        <h3>Cutting</h3>
+        <div class="py">Qiē · Incoming inspection</div>
+        <p>Material and components are checked on arrival. What fails here never enters production.</p>
+      </div>
+      <div class="step">
+        <span class="glyph">磋</span>
+        <h3>Filing</h3>
+        <div class="py">Cuō · Machining &amp; assembly</div>
+        <p>Dimensional accuracy is held to the agreed drawing and recorded batch by batch.</p>
+      </div>
+      <div class="step">
+        <span class="glyph">琢</span>
+        <h3>Carving</h3>
+        <div class="py">Zhuó · Precision finishing</div>
+        <p>Fit, function and appearance are finished to the standard the sample was approved at.</p>
+      </div>
+      <div class="step">
+        <span class="glyph">磨</span>
+        <h3>Polishing</h3>
+        <div class="py">Mó · Test, pack &amp; document</div>
+        <p>Final test, packing against transport damage, and the export documents that follow the goods.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>About the group</h2>
+      <span class="zh">关于我们</span>
+      <p>
+        JadeRitual Group is the trading name of
+        <strong>Shandong Wise Education Consulting Group</strong>, established in Shandong, China
+        in April 2020. We source, verify and export across five divisions.
+      </p>
+    </div>
+    <div class="info-grid">
+      <div>
+        <dl>
+          <div class="fact"><dt>Legal entity</dt><dd>Shandong Wise Education Consulting Group<br><span style="color:var(--ink-3);font-size:.85rem">山东明智教育咨询集团</span></dd></div>
+          <div class="fact"><dt>Brand</dt><dd>JadeRitual Group</dd></div>
+          <div class="fact"><dt>Established</dt><dd>April 2020</dd></div>
+          <div class="fact"><dt>Registered address</dt><dd>Shandong, China <span style="color:var(--ink-3)">中国 · 山东</span></dd></div>
+          <div class="fact"><dt>Divisions</dt><dd>Tea ware · Jewellery · Machinery &amp; parts · Electric vehicles · Automotive interior</dd></div>
+          <div class="fact"><dt>Business model</dt><dd>Wholesale and OEM / ODM only</dd></div>
+          <div class="fact"><dt>Regions we serve</dt><dd>Southeast Asia · Middle East · Africa · Europe · North America · South America</dd></div>
+        </dl>
+      </div>
+      <div class="contact-box" id="contact">
+        <h3>Start an enquiry</h3>
+        <span class="zh">联系我们</span>
+        <a href="https://wa.me/8618663543398">WhatsApp · +86 186 6354 3398</a>
+        <a href="https://wa.me/8615589482015">WhatsApp · +86 155 8948 2015</a>
+        <a href="mailto:mike@thejaderitual.com">mike@thejaderitual.com</a>
+        <p style="margin-top:22px;font-size:.82rem;color:rgba(234,243,239,.62)">
+          Tell us the division, the product, the specification and the destination market.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="clients">
+  <div class="wrap">
+    <div class="sec-head" style="max-width:52em">
+      <h2>Client feedback</h2>
+      <span class="zh">客户评价</span>
+      <p>
+        We publish a testimonial only when it comes from a real, completed order and the buyer has
+        agreed to be quoted. Until then this space stays empty on purpose.
+      </p>
+    </div>
+    <div style="border:1px solid var(--line);border-left:3px solid var(--jade-500);border-radius:4px;padding:30px 32px;background:#fff;max-width:52em">
+      <h3 style="font-size:1.04rem;color:var(--jade-900)">Client references available on request</h3>
+      <p style="margin-top:14px;font-size:.92rem;color:var(--ink-2)">
+        Before you place a first order, you are welcome to speak with an existing buyer in your
+        region. Ask us and — where that buyer agrees — we will arrange the introduction directly.
+      </p>
+      <p style="margin-top:18px;font-size:.88rem">
+        <a href="#contact" style="color:var(--jade-700)">Ask for a reference →</a>
+      </p>
+    </div>
+
+    <!-- ================================================================
+         TESTIMONIALS — replace the reference box above once real quotes exist.
+
+         <div class="q-item" style="border-top:1px solid var(--line);padding-top:20px">
+           <p style="font-size:.95rem;color:var(--ink-2)">“Exact words the buyer agreed to.”</p>
+           <p style="margin-top:12px;font-size:.82rem;color:var(--ink-3)">— Name, Company, Country</p>
+         </div>
+
+         Only publish quotes you can produce on request, with written permission.
+         ================================================================ -->
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>&copy; 2026 JadeRitual Group · Operated by Shandong Wise Education Consulting Group</div>
+      <div style="display:flex;gap:22px">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms &amp; Conditions</a>
+      </div>
+    </div>
+    <div class="disc">
+      This site is the corporate homepage of the group. Product catalogues, specifications and
+      prices are published by each division on its own site. Certifications, test reports and
+      compliance documents are issued per product and per destination market; nothing on this
+      page should be read as a certification claim.
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------
+   Division link guard.
+   Divisions whose subdomain is not live yet are marked data-live="false".
+   When a subdomain goes live, change that attribute to "true" and the
+   card becomes a normal link (remove the badge element at the same time).
+   ------------------------------------------------------------------ */
+(function () {
+  var cards = document.querySelectorAll('.div-card[data-live="false"]');
+  cards.forEach(function (card) {
+    card.classList.add('soon');
+    card.addEventListener('click', function (e) {
+      e.preventDefault();
+      var name = card.getAttribute('data-name') || 'This division';
+      var note = document.getElementById('soon-note');
+      if (!note) {
+        note = document.createElement('div');
+        note.id = 'soon-note';
+        note.style.cssText =
+          'position:fixed;left:50%;bottom:32px;transform:translateX(-50%);background:#1C4A3E;' +
+          'color:#fff;padding:13px 24px;border-radius:3px;font-size:.86rem;z-index:99;' +
+          'box-shadow:0 8px 30px -10px rgba(0,0,0,.45);transition:opacity .3s;';
+        document.body.appendChild(note);
+      }
+      note.textContent = name + ' — this division site is launching soon. Please use the enquiry form in the meantime.';
+      note.style.opacity = '1';
+      clearTimeout(window.__soonTimer);
+      window.__soonTimer = setTimeout(function () { note.style.opacity = '0'; }, 3200);
+    });
+  });
+
+  /* smooth close for the sticky header offset */
+  document.querySelectorAll('nav a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var el = document.querySelector(a.getAttribute('href'));
+      if (!el) return;
+      e.preventDefault();
+      window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
