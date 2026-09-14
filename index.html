@@ -40,6 +40,9 @@
   --gold-2:#E0C892;
   --gold-dim:rgba(200,169,106,.30);
   --gold-line:rgba(200,169,106,.22);
+  /* gold for TEXT on light grounds — 5.1:1 on paper */
+  --gold-ink:#836428;
+  --gold-ink-dim:rgba(131,100,40,.34);
 
   /* light grounds */
   --paper:#F8F6F1;
@@ -50,10 +53,10 @@
   /* type */
   --txt:#131B18;
   --txt-2:#4C5953;
-  --txt-3:#8B968F;
+  --txt-3:#6B7671;
   --inv:#F3F0E8;
-  --inv-2:rgba(243,240,232,.68);
-  --inv-3:rgba(243,240,232,.42);
+  --inv-2:rgba(243,240,232,.74);
+  --inv-3:rgba(243,240,232,.58);
 
   --maxw:1200px;
 }
@@ -74,6 +77,9 @@ a{color:inherit;text-decoration:none}
   color:var(--gold);margin-bottom:26px;display:flex;align-items:center;gap:14px;
 }
 .label::after{content:"";height:1px;width:48px;background:var(--gold-dim)}
+.label--ink{color:var(--gold-ink)}
+.label--ink::after{background:var(--gold-ink-dim)}
+.label--ink .zh{color:var(--txt-3)}
 .label .zh{font-size:.8rem;letter-spacing:.2em;color:var(--inv-3)}
 
 /* ---------- header ---------- */
@@ -163,6 +169,21 @@ section{padding:118px 0}
   font-family:Georgia,"Songti SC",serif;color:var(--jade-900);font-size:1.08rem;line-height:1.85;
 }
 .quote cite{display:block;margin-top:14px;font-size:.72rem;font-style:normal;color:var(--txt-3);letter-spacing:.12em;text-transform:uppercase}
+.sec-dark .story-grid h2{color:var(--inv)}
+.sec-dark .story-zh{color:var(--jade-200)}
+.sec-dark .story-body p{color:var(--inv-2)}
+.sec-dark .story-body strong{color:var(--inv)}
+.sec-dark .quote{color:var(--inv);border-left-color:var(--gold)}
+.sec-dark .quote cite{color:var(--inv-3)}
+.sec-dark .div-card{background:rgba(255,255,255,.04);border-color:var(--gold-line)}
+.sec-dark .step{background:rgba(255,255,255,.05);border-color:var(--gold-line)}
+.sec-dark .step h3{color:var(--inv)}
+.sec-dark .step p{color:var(--inv-2)}
+.sec-dark .step .glyph{color:rgba(200,169,106,.16)}
+.sec-dark .ref-box{background:rgba(255,255,255,.05);border-color:var(--gold-line);border-left-color:var(--gold)}
+.sec-dark .ref-box h3{color:var(--inv)}
+.sec-dark .ref-box p{color:var(--inv-2)}
+.sec-dark .ref-box .go a{color:var(--gold-2);border-bottom-color:var(--gold-dim)}
 
 /* ---------- divisions ---------- */
 .div-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -183,7 +204,7 @@ a.div-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:
 }
 .badge{
   position:absolute;top:26px;right:30px;font-size:.58rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-dim);padding:4px 10px;
+  text-transform:uppercase;color:var(--gold-ink);border:1px solid var(--gold-ink-dim);padding:4px 10px;
 }
 .div-card.soon{opacity:.62}
 
@@ -203,7 +224,7 @@ a.div-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:
 .step:hover{border-color:var(--gold)}
 .step .glyph{font-family:Georgia,"Songti SC",serif;font-size:3.4rem;color:var(--paper-2);position:absolute;right:16px;top:-6px;line-height:1}
 .step h3{font-size:1.06rem;color:var(--jade-900);position:relative}
-.step .py{font-size:.64rem;letter-spacing:.24em;color:var(--gold);text-transform:uppercase;margin-top:9px;position:relative}
+.step .py{font-size:.64rem;letter-spacing:.24em;color:var(--gold-ink);text-transform:uppercase;margin-top:9px;position:relative}
 .step p{font-size:.89rem;color:var(--txt-2);margin-top:16px;position:relative}
 
 /* ---------- clients ---------- */
@@ -212,7 +233,7 @@ a.div-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:
 .ref-box p{margin-top:16px;font-size:.96rem;color:var(--txt-2)}
 .ref-box .go{margin-top:24px;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
 .ref-box .go a{color:var(--jade-600);border-bottom:1px solid var(--gold-dim);padding-bottom:3px;transition:.25s}
-.ref-box .go a:hover{color:var(--gold);border-color:var(--gold)}
+.ref-box .go a:hover{color:var(--gold-ink);border-color:var(--gold-ink)}
 
 /* ---------- about / contact ---------- */
 .info-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:72px}
@@ -286,10 +307,10 @@ footer{background:var(--ink-950);color:var(--inv-3);padding:56px 0 48px;font-siz
   </div>
 </section>
 
-<section id="story">
+<section id="story" class="sec-dark">
   <div class="wrap story-grid">
     <div>
-      <div class="label" style="color:#8A6A2E">01 &mdash; The Idea</div>
+      <div class="label label--ink">01 &mdash; The Idea</div>
       <h2>Why jade</h2>
       <div class="story-zh">玉，石之美者</div>
     </div>
@@ -322,7 +343,7 @@ footer{background:var(--ink-950);color:var(--inv-3);padding:56px 0 48px;font-siz
 <section id="divisions" class="sec-paper2">
   <div class="wrap">
     <div class="sec-head">
-      <div class="label" style="color:#8A6A2E">02 &mdash; Divisions</div>
+      <div class="label label--ink">02 &mdash; Divisions</div>
       <h2>Our divisions</h2>
       <span class="zh">五大业务板块</span>
       <p>
@@ -342,8 +363,7 @@ footer{background:var(--ink-950);color:var(--inv-3);padding:56px 0 48px;font-siz
         <div class="dom">machinery.thejaderitual.com</div>
       </a>
 
-      <a class="div-card" data-live="false" href="https://ev.thejaderitual.com" data-name="Electric Vehicles">
-        <span class="badge">Launching soon</span>
+      <a class="div-card" data-live="true" href="https://ev.thejaderitual.com" data-name="Electric Vehicles">
         <span class="div-bar" style="background:var(--jade-400)"></span>
         <h3>Electric Vehicles</h3>
         <div class="sub">Electric tricycles · Cargo trikes</div>
@@ -422,10 +442,10 @@ footer{background:var(--ink-950);color:var(--inv-3);padding:56px 0 48px;font-siz
   </div>
 </section>
 
-<section id="process">
+<section id="process" class="sec-dark">
   <div class="wrap">
     <div class="sec-head">
-      <div class="label" style="color:#8A6A2E">04 &mdash; Process</div>
+      <div class="label label--ink">04 &mdash; Process</div>
       <h2>Four steps, named after jade</h2>
       <span class="zh">《毛传》：治骨曰切，象曰磋，玉曰琢，石曰磨</span>
       <p>
@@ -462,10 +482,10 @@ footer{background:var(--ink-950);color:var(--inv-3);padding:56px 0 48px;font-siz
   </div>
 </section>
 
-<section id="clients" class="sec-paper2">
+<section id="clients" class="sec-dark">
   <div class="wrap">
     <div class="sec-head">
-      <div class="label" style="color:#8A6A2E">05 &mdash; Clients</div>
+      <div class="label label--ink">05 &mdash; Clients</div>
       <h2>Client feedback</h2>
       <span class="zh">客户评价</span>
       <p>
