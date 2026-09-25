@@ -25,19 +25,19 @@
   --gold-dim:rgba(200,169,106,.30);
   --gold-line:rgba(200,169,106,.22);
   /* gold for TEXT on light grounds — 5.1:1 on paper */
-  --gold-ink:#836428;
-  --gold-ink-dim:rgba(131,100,40,.34);
+  --gold-ink:#D9BE86;
+  --gold-ink-dim:rgba(217,190,134,.34);
 
   /* light grounds */
-  --paper:#F8F6F1;
-  --paper-2:#EFEBE1;
-  --card:#FFFFFF;
-  --line:#DED8C9;
+  --paper:#0F241D;
+  --paper-2:#0A1A15;
+  --card:#16332A;
+  --line:rgba(200,169,106,.22);
 
   /* type */
-  --txt:#131B18;
-  --txt-2:#4C5953;
-  --txt-3:#6B7671;
+  --txt:#F3F0E8;
+  --txt-2:rgba(243,240,232,.74);
+  --txt-3:rgba(243,240,232,.58);
   --inv:#F3F0E8;
   --inv-2:rgba(243,240,232,.74);
   --inv-3:rgba(243,240,232,.58);
@@ -137,7 +137,7 @@ section{padding:118px 0}
 .sec-dark .sec-head p{color:var(--inv-2)}
 .sec-paper2{background:var(--paper-2)}
 .sec-head{max-width:46em;margin-bottom:64px}
-.sec-head h2{font-size:clamp(1.7rem,3vw,2.5rem);color:var(--jade-900)}
+.sec-head h2{font-size:clamp(1.7rem,3vw,2.5rem);color:var(--inv)}
 .sec-head .zh{display:block;font-size:.95rem;letter-spacing:.22em;color:var(--txt-3);margin-top:16px}
 .sec-dark .sec-head .zh{color:var(--inv-3)}
 .sec-head p{margin-top:22px;color:var(--txt-2);font-size:1rem}
@@ -145,12 +145,12 @@ section{padding:118px 0}
 /* ---------- story ---------- */
 .story-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:78px;align-items:start}
 @media(max-width:900px){.story-grid{grid-template-columns:1fr;gap:36px}}
-.story-grid h2{font-size:clamp(1.7rem,3vw,2.5rem);color:var(--jade-900)}
-.story-zh{font-family:Georgia,"Songti SC",serif;font-size:1.7rem;color:var(--jade-600);letter-spacing:.24em;margin-top:20px}
+.story-grid h2{font-size:clamp(1.7rem,3vw,2.5rem);color:var(--inv)}
+.story-zh{font-family:Georgia,"Songti SC",serif;font-size:1.7rem;color:var(--gold-2);letter-spacing:.24em;margin-top:20px}
 .story-body p{color:var(--txt-2);margin-bottom:20px;font-size:1rem}
 .quote{
   border-left:2px solid var(--gold);padding:6px 0 6px 28px;margin:34px 0;
-  font-family:Georgia,"Songti SC",serif;color:var(--jade-900);font-size:1.08rem;line-height:1.85;
+  font-family:Georgia,"Songti SC",serif;color:var(--inv);font-size:1.08rem;line-height:1.85;
 }
 .quote cite{display:block;margin-top:14px;font-size:.72rem;font-style:normal;color:var(--txt-3);letter-spacing:.12em;text-transform:uppercase}
 .sec-dark .story-grid h2{color:var(--inv)}
@@ -179,11 +179,11 @@ section{padding:118px 0}
 }
 a.div-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 22px 48px -30px rgba(15,36,29,.55)}
 .div-bar{width:38px;height:2px;margin-bottom:26px}
-.div-card h3{font-size:1.18rem;color:var(--jade-900)}
+.div-card h3{font-size:1.18rem;color:var(--inv)}
 .div-card .sub{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--txt-3);margin-top:12px}
 .div-card p{margin-top:20px;font-size:.92rem;color:var(--txt-2);flex:1}
 .div-card .dom{
-  margin-top:26px;font-size:.76rem;color:var(--jade-600);letter-spacing:.04em;
+  margin-top:26px;font-size:.76rem;color:var(--gold-2);letter-spacing:.04em;
   border-top:1px solid var(--line);padding-top:16px;word-break:break-all;
 }
 .badge{
@@ -191,6 +191,17 @@ a.div-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:
   text-transform:uppercase;color:var(--gold-ink);border:1px solid var(--gold-ink-dim);padding:4px 10px;
 }
 .div-card.soon{opacity:.62}
+
+/* Representative product frame inside each division card. It sits in its own
+   band below the copy and above the domain line, so it never overlaps text and
+   never competes with the paragraph for contrast. The group homepage is where a
+   buyer decides whether to click through at all, and a list of words does not
+   answer "what do they actually sell" as fast as a photograph does. */
+.div-card .div-img{display:block;width:100%;height:132px;object-fit:cover;
+  margin:22px 0 0;border:1px solid var(--line);background:var(--paper-2)}
+.div-card:hover .div-img{border-color:var(--gold)}
+@media(max-width:620px){.div-card .div-img{height:112px}}
+
 
 /* ---------- quality ---------- */
 .q-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 70px}
@@ -207,16 +218,16 @@ a.div-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:
 .step{background:var(--card);border:1px solid var(--line);padding:34px 26px;position:relative;overflow:hidden;transition:.3s}
 .step:hover{border-color:var(--gold)}
 .step .glyph{font-family:Georgia,"Songti SC",serif;font-size:3.4rem;color:var(--paper-2);position:absolute;right:16px;top:-6px;line-height:1}
-.step h3{font-size:1.06rem;color:var(--jade-900);position:relative}
+.step h3{font-size:1.06rem;color:var(--inv);position:relative}
 .step .py{font-size:.64rem;letter-spacing:.24em;color:var(--gold-ink);text-transform:uppercase;margin-top:9px;position:relative}
 .step p{font-size:.89rem;color:var(--txt-2);margin-top:16px;position:relative}
 
 /* ---------- clients ---------- */
 .ref-box{border:1px solid var(--line);border-left:3px solid var(--gold);padding:40px 40px 36px;background:var(--card);max-width:54em}
-.ref-box h3{font-size:1.14rem;color:var(--jade-900)}
+.ref-box h3{font-size:1.14rem;color:var(--inv)}
 .ref-box p{margin-top:16px;font-size:.96rem;color:var(--txt-2)}
 .ref-box .go{margin-top:24px;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase}
-.ref-box .go a{color:var(--jade-600);border-bottom:1px solid var(--gold-dim);padding-bottom:3px;transition:.25s}
+.ref-box .go a{color:var(--gold-2);border-bottom:1px solid var(--gold-dim);padding-bottom:3px;transition:.25s}
 .ref-box .go a:hover{color:var(--gold-ink);border-color:var(--gold-ink)}
 
 /* ---------- about / contact ---------- */
@@ -242,6 +253,28 @@ footer{background:var(--ink-950);color:var(--inv-3);padding:56px 0 48px;font-siz
 .ft a:hover{color:var(--gold-2)}
 .disc{margin-top:34px;padding-top:28px;border-top:1px solid rgba(200,169,106,.14);font-size:.74rem;line-height:1.8;max-width:74em}
 
+/* ---------- language strip ----------
+   Where a visitor looks for it: top right of the first screen. It used to be the
+   last column of the footer, which meant scrolling to the bottom of the page to
+   find your own language. The strip scrolls away with the page; the sticky
+   header below it is unchanged. */
+.util{background:var(--ink-950);border-bottom:1px solid var(--gold-line)}
+.util .wrap{display:flex;align-items:center;justify-content:flex-end;gap:14px;padding:8px 0}
+.util-l{font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--inv-3)}
+@media(max-width:560px){.util-l{display:none}}
+#google_translate_element{font-size:.75rem}
+#google_translate_element .goog-te-gadget{color:var(--inv-3)!important;font-size:.75rem!important;white-space:nowrap}
+#google_translate_element select,#google_translate_element .goog-te-combo{background:var(--card)!important;color:var(--inv)!important;border:1px solid var(--gold-line)!important;border-radius:0!important;padding:4px 6px!important;margin:0!important;font-size:.74rem!important;font-family:inherit!important;max-width:190px;height:26px!important;line-height:1!important}
+.util{max-height:52px;overflow:hidden}
+#google_translate_element{display:flex;align-items:center;height:30px;flex:0 0 auto;min-width:max-content;white-space:nowrap}
+#google_translate_element .goog-te-gadget{display:flex;align-items:center;line-height:1;background:transparent!important;white-space:nowrap!important}
+#google_translate_element .goog-te-gadget-icon{display:none!important}
+#google_translate_element .goog-te-gadget-simple{background:transparent!important;border:0!important;padding:0!important;font-size:.74rem!important;white-space:nowrap!important}
+#google_translate_element .goog-te-gadget-simple a,#google_translate_element .goog-te-gadget-simple span{color:var(--inv-3)!important;background:transparent!important;text-decoration:none!important}
+#google_translate_element .goog-te-gadget-simple img{display:none!important}
+
+body{top:0!important}
+.skiptranslate iframe{display:none!important}
 /* ============================================================
    Interior pages — added 2026-09-19
    Appended after the original brand rules. Same palette only.
@@ -275,7 +308,7 @@ section[id]{scroll-margin-top:78px}
 /* ---------- running prose ---------- */
 .prose{max-width:54em}
 .prose p{color:var(--txt-2);font-size:1rem;margin-bottom:20px}
-.prose h3{font-size:1.1rem;color:var(--jade-900);margin:38px 0 16px}
+.prose h3{font-size:1.1rem;color:var(--inv);margin:38px 0 16px}
 .prose h3:first-child{margin-top:0}
 .prose strong{color:var(--txt)}
 .prose--inv p{color:var(--inv-2)}
@@ -298,7 +331,7 @@ section[id]{scroll-margin-top:78px}
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 @media(max-width:900px){.cap-grid{grid-template-columns:1fr}}
 .cap-card{background:var(--card);border:1px solid var(--line);padding:34px 26px;transition:.3s}
-.cap-card h3{font-size:1.02rem;color:var(--jade-900)}
+.cap-card h3{font-size:1.02rem;color:var(--inv)}
 .cap-card .sub{
   font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;
   color:var(--txt-3);margin-top:11px;
@@ -316,7 +349,7 @@ section[id]{scroll-margin-top:78px}
   cursor:pointer;list-style:none;display:flex;justify-content:space-between;
   align-items:baseline;gap:24px;
   font-family:Georgia,"Times New Roman","Songti SC",serif;
-  font-size:1.07rem;color:var(--jade-900);line-height:1.4;
+  font-size:1.07rem;color:var(--inv);line-height:1.4;
 }
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+";color:var(--gold-ink);font-size:1.15rem;line-height:1;flex:none}

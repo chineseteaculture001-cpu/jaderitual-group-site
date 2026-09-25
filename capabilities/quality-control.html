@@ -17,6 +17,7 @@
 </head>
 <body>
 
+<div class="util"><div class="wrap"><span class="util-l">Language</span><div id="google_translate_element"></div></div></div>
 <header>
   <div class="wrap hd">
     <a class="brand" href="/">
@@ -213,5 +214,11 @@
   </div>
 </footer>
 
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'en',layout:google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay:false},'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en" async></script>
 </body>
 </html>
