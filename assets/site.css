@@ -76,6 +76,7 @@ header{
 .hd{display:flex;align-items:center;justify-content:space-between;height:78px}
 .brand{display:flex;align-items:center;gap:13px}
 .mark{width:32px;height:32px;flex:none}
+@media(max-width:760px){.mark{width:26px;height:26px}}
 .brand-t{font-family:Georgia,serif;font-size:1.1rem;color:var(--inv);letter-spacing:.01em;display:block}
 .brand-s{font-size:.66rem;letter-spacing:.2em;font-weight:600;color:var(--gold-2);text-transform:uppercase;display:block;margin-top:2px;white-space:nowrap}
 nav{display:flex;gap:34px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--inv-2)}
