@@ -77,7 +77,7 @@ header{
 .brand{display:flex;align-items:center;gap:13px}
 .mark{width:32px;height:32px;flex:none}
 .brand-t{font-family:Georgia,serif;font-size:1.1rem;color:var(--inv);letter-spacing:.01em;display:block}
-.brand-s{font-size:.6rem;letter-spacing:.34em;color:var(--gold);text-transform:uppercase;display:block;margin-top:2px}
+.brand-s{font-size:.66rem;letter-spacing:.2em;font-weight:600;color:var(--gold-2);text-transform:uppercase;display:block;margin-top:2px;white-space:nowrap}
 nav{display:flex;gap:34px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--inv-2)}
 nav a{transition:color .25s;position:relative;padding-bottom:3px}
 nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--gold);transition:width .3s}
